@@ -1,27 +1,20 @@
 {
-  "name": "roots/bedrock",
+  "name": "ptibbetts/paultibbetts.uk",
   "type": "project",
-  "license": "MIT",
-  "description": "A modern WordPress stack",
-  "homepage": "http://roots.io/wordpress-stack/",
+  "description": "Personal website, based on Bedrock and Sage by Roots",
+  "homepage": "https://paultibbetts.uk",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Paul Tibbetts",
+      "email": "email@paultibbetts.uk",
+      "homepage": "https://paultibbetts.uk"
     }
   ],
   "keywords": [
-    "wordpress", "stack", "capistrano", "composer", "vagrant", "wp"
+    "wordpress", "Paul Tibbetts", "personal website"
   ],
   "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "http://discourse.roots.io/category/bedrock"
+    "issues": "https://github.com/ptibbetts/paultibbetts.uk/issues"
   },
   "config": {
     "preferred-install": "dist",
@@ -37,13 +30,48 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
+    },
+    {
+      "type":"package",
+        "package": {
+          "name": "ptibbetts/blavatar",
+          "version": "master",
+          "source": {
+            "url": "https://gist.github.com/66259c06bc9485cc4268.git",
+            "type": "git",
+            "reference":"master"
+          },
+          "autoload": {
+            "classmap": ["."]
+          },
+          "require": {
+            "composer/installers": "~1.0"
+          },
+          "type": "wordpress-plugin",
+          "installation-source": "dist"
+        }
     }
   ],
   "require": {
     "php": ">=5.4",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "1.0.9",
-    "johnpbloch/wordpress": "4.1.1"
+    "johnpbloch/wordpress": "4.1.1",
+    "ptibbetts/blavatar":"dev-master",
+    "wpackagist-plugin/akismet": "*",
+    "wpackagist-plugin/jetpack": "*",
+    "wpackagist-plugin/cat-signal": "*",
+    "wpackagist-plugin/editorial-calendar": "*",
+    "wpackagist-plugin/enable-oembed-discovery": "*",
+    "wpackagist-plugin/indieweb-post-kinds": "*",
+    "wpackagist-plugin/micropub": "*",
+    "wpackagist-plugin/relsyndication": "*",
+    "wpackagist-plugin/semantic-linkbacks": "*",
+    "wpackagist-plugin/social": "*",
+    "wpackagist-plugin/twitter-cards-meta": "*",
+    "wpackagist-plugin/webmention": "*",
+    "wpackagist-plugin/wordpress-https": "*",
+    "wpackagist-plugin/wordpress-seo": "*"
   },
   "extra": {
     "installer-paths": {
