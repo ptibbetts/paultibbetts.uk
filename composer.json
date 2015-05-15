@@ -56,7 +56,7 @@
     "php": ">=5.4",
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "1.0.9",
-    "johnpbloch/wordpress": "4.1.1",
+    "johnpbloch/wordpress": "4.2.2",
     "ptibbetts/blavatar":"dev-master",
     "wpackagist-plugin/akismet": "*",
     "wpackagist-plugin/jetpack": "*",
