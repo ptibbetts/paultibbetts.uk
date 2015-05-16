@@ -72,7 +72,8 @@
     "wpackagist-plugin/twitter-cards-meta": "*",
     "wpackagist-plugin/webmention": "*",
     "wpackagist-plugin/wordpress-https": "*",
-    "wpackagist-plugin/wordpress-seo": "*"
+    "wpackagist-plugin/wordpress-seo": "*",
+    "wpackagist-plugin/wordpress-importer": "^0.6.1"
   },
   "extra": {
     "installer-paths": {
