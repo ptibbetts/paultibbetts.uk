@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "320e044c3073e57b182acaafd7d2013f",
+    "hash": "e6bdd3b30ec4938b1a60ec3b8d96e0d7",
     "packages": [
         {
             "name": "composer/installers",
@@ -192,6 +192,48 @@
             "time": "2014-08-28 21:30:06"
         },
         {
+            "name": "roots/soil",
+            "version": "3.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/roots/soil.git",
+                "reference": "adaf4a0941224dfeab470a123d59dd925fc65004"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/roots/soil/zipball/adaf4a0941224dfeab470a123d59dd925fc65004",
+                "reference": "adaf4a0941224dfeab470a123d59dd925fc65004",
+                "shasum": ""
+            },
+            "require": {
+                "composer/installers": "~1.0",
+                "php": ">=5.4.0"
+            },
+            "type": "wordpress-plugin",
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Scott Walkinshaw",
+                    "email": "scott.walkinshaw@gmail.com",
+                    "homepage": "https://github.com/swalkinshaw"
+                },
+                {
+                    "name": "Ben Word",
+                    "email": "ben@benword.com",
+                    "homepage": "https://github.com/retlehs"
+                }
+            ],
+            "description": "Clean up WordPress markup, relative URLs, nice search",
+            "homepage": "https://roots.io/plugins/soil/",
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-04-29 04:46:56"
+        },
+        {
             "name": "vlucas/phpdotenv",
             "version": "v1.0.9",
             "source": {
@@ -324,7 +366,7 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "1.4.0",
+            "version": "1.4.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/indieweb-post-kinds/",

@@ -57,6 +57,7 @@
     "composer/installers": "v1.0.12",
     "vlucas/phpdotenv": "1.0.9",
     "johnpbloch/wordpress": "4.2.2",
+    "roots/soil": "^3.4",
     "ptibbetts/blavatar":"dev-master",
     "wpackagist-plugin/akismet": "*",
     "wpackagist-plugin/jetpack": "*",
