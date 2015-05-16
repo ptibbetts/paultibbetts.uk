@@ -23,18 +23,6 @@ Repository:     | https://github.com/ptibbetts/paultibbetts.uk
 - Subscription Feeds
 - RSS Feed reader
 
-### Installation
-
-Clone this repository next to `bedrock-ansible`, to achieve the following file structure:
-
-```
-├── paultibbetts.uk
-│   ├── bedrock-ansible
-│   └── paultibbetts.uk
-```
-
-
-
 ### Info
 
 Displayed in a vcard/hcard
