@@ -1,0 +1,284 @@
+.Header {
+
+  background: rgba(palette(white),0.75);
+  padding: .3em 0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+
+  &.headroom {
+      transition: transform 300ms linear;
+  }
+
+  &.headroom--pinned {
+      transform: translateY(0%);
+  }
+
+  &.headroom--unpinned {
+      transform: translateY(-100%);
+  }
+
+  .container {
+    @include outer-container;
+  }
+
+  .Brand {
+    @media (min-width: 260px) {
+      @include span-columns(4);
+    }
+
+    @media (min-width: 870px) {
+      max-width: 24%;
+    }
+  }
+
+  .Nav {
+    display: none;
+    vertical-align: middle;
+
+    @media (min-width: 870px) {
+      @include span-columns(8);
+      // display: inline-block;
+      margin-top: 3em;
+      // width: 75%;
+
+      ul {
+        float: right;
+
+        li {
+          position: relative;
+          .sub-menu {
+            visibility: hidden;
+            position: absolute;
+            top: 100%;
+            padding-top: 0.75em;
+            margin-left: -51px;
+
+            li {
+              margin-left: 0;
+              padding: 0.5em;
+              font-size: 0.9em;
+              width: 160px;
+              background-color: #EDEDED;
+              text-align: center;
+              &:first-of-type {
+                padding-top: 0.75em;
+                &:after {
+                  bottom: 100%;
+                  left: 50%;
+                  border: solid transparent;
+                  content: " ";
+                  height: 0;
+                  width: 0;
+                  position: absolute;
+                  pointer-events: none;
+                  border-color: rgba(237, 237, 237, 0);
+                  border-bottom-color: #EDEDED;
+                  border-width: 10px;
+                  margin-left: -10px;
+                }
+              }
+              &:last-of-type {
+                padding-bottom: 1em;
+              }
+              a {
+                color: palette(teal,dark);
+
+                &:hover {
+                  color: palette(orange);
+                }
+              }
+              &.active {
+                a {
+                  color: palette(orange);
+                }
+              }
+            }
+          }
+          &:hover {
+            .sub-menu {
+              visibility: visible;
+            }
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
+
+/** Responsive Navigation **/
+
+.overlay-trigger {
+
+  &-wrap {
+    @media (min-width: 260px) {
+      @include span-columns(6);
+      @include shift(2);
+      @include omega;
+    }
+  }
+
+  background: palette(teal);
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  display: block;
+  font-weight: 400;
+  outline: none;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: margin-top 150ms ease;
+
+  @media (min-width: 260px) {
+    display: inline-block;
+    float: right;
+    margin: 1.5em 1em 1em 2em;
+  }
+
+  @media (min-width: 600px) {
+    margin-top: 3em;
+  }
+
+  @media (min-width: 870px) {
+    display: none;
+  }
+
+  &:hover {
+    background: palette(teal,dark);
+  }
+
+}
+
+/* Overlay style */
+.overlay {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: palette(teal);
+  opacity: 0.9;
+  z-index: 3;
+}
+
+/* Overlay closing cross */
+.overlay .overlay-close {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  overflow: hidden;
+  border: none;
+  background: url(../images/cross.png) no-repeat center center;
+  text-indent: 200%;
+  color: transparent;
+  outline: none;
+  z-index: 100;
+  @media (max-width: 460px) {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+/* Menu style */
+.overlay nav {
+  text-align: center;
+  position: relative;
+  top: 50%;
+  height: 60%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+
+  @media (max-height: 680px) {
+    height: 75%;
+  }
+}
+
+.overlay ul {
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  display: inline-block;
+  height: 100%;
+  position: relative;
+
+  li {
+    display: block;
+    // height: 20%;
+    // height: calc(100% / 6);
+    min-height: 3rem;
+    @media (max-width: 460px), (max-height: 500px) {
+      min-height: 2.5rem;
+    }
+    backface-visibility: hidden;
+
+    a {
+      color: #fff;
+      display: block;
+      font-size: 3rem;
+      font-weight: 300;
+      text-decoration: none;
+      transition: color 0.2s;
+
+      @media (max-width: 460px), (max-height: 500px) {
+        font-size: 1.75rem;
+        // height: calc(100% / 6);
+      }
+
+      &:hover,
+      &:focus {
+        color: palette(orange);
+      }
+    }
+
+  }
+
+  .sub-menu {
+    margin-bottom: 0.5rem;
+    li { 
+      a {
+        font-size: 2rem;
+      }
+      @media (max-width: 460px), (max-height: 500px)  {
+        a { 
+          font-size: 1.25rem;
+          line-height: 1em;
+          padding: 0.25em 0;
+        }
+        min-height: 1rem;
+      }
+    }
+  }
+}
+
+/* Effects */
+.overlay-slidedown {
+  visibility: hidden;
+  transform: translateY(-100%);
+  transition: transform 0.4s ease-in-out, visibility 0s 0.4s;
+
+  &.open {
+    visibility: visible;
+    transform: translateY(0%);
+    transition: transform 0.4s ease-in-out;
+  }
+
+}
+
+
+@media screen and (max-height: 30.5em) {
+  .overlay nav {
+    //height: 70%;
+    //font-size: 34px;
+  }
+  .overlay ul li {
+    //min-height: 34px;
+  }
+}

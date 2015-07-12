@@ -1,0 +1,13 @@
+// Colour Pallete
+//  http://erskinedesign.com/blog/friendlier-colour-names-sass-maps/
+//
+// Usage:
+//  a {
+//     color: palette(purple);
+//     &:hover {
+//         color: palette(purple, light);
+//     }
+// }
+@function palette($palette, $tone: 'base') {
+    @return map-get(map-get($palettes, $palette), $tone);
+}

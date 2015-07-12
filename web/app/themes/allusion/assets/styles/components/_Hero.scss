@@ -1,0 +1,127 @@
+.Hero {
+
+  @include clearfix;
+  @media (min-width: 767px) {
+    padding-top: 8em; //to make room for the header
+  }
+
+  &--large {
+    padding-bottom: 9em;
+
+      .container {
+        padding: 5em 0;
+      }
+
+      @media (max-width: 767px) {
+        padding-bottom: 0;
+        padding-top: 3em;
+        .container {
+          padding-bottom: 3em;
+        }
+      } 
+
+    }
+
+    &--regular {
+      .container {
+        padding-top: 8em;
+        padding-bottom: 1em;
+      }
+
+    }
+
+
+  .container {
+    @include outer-container;
+  }
+
+  &-content {
+    color: palette(white);
+    text-shadow: 0px 2px 2px rgba(150, 150, 150, 1);
+
+    // Size
+
+
+    // Content position
+    &--right {
+      @include outer-container(49em);
+      float: right;
+    }
+
+    &--center {
+      @include outer-container(45em);
+      text-align: center;
+    }
+
+    &--left {
+      @include outer-container(49em);
+      float: left;
+    }
+
+    // Titles
+    h1 {
+      font-size: 4em;
+      font-weight: normal;
+      margin: 0;
+
+      @media (max-width: 620px) {
+        font-size: 3em;
+        line-height: 1em;
+      }
+    }
+
+    h2 {
+      @include outer-container(70%);
+      font-size: 1.8rem;
+
+      @media (max-width: 620px) {
+        font-size: 1.5rem;
+        line-height: 1.2em;
+      }
+    }
+
+    // Quote
+    blockquote {
+      p {
+        font-size: 2rem;
+        position: relative;
+
+        @media (max-width: 620px) {
+          font-size: 1.25rem;
+        }
+
+        &:first-child {
+
+          &:before {
+            content: "“";
+            position: absolute; // to not indent the text
+            left: -0.35em;
+          }
+
+          &:after {
+            content: "”";
+          }
+
+        }
+
+        // Name
+        &:last-child {
+          margin-top: 0;
+          font-size: 1.2rem;
+          @media (max-width: 620px) {
+            font-size: 1rem;
+          }
+
+          // faux 'cite'
+          em {
+            font-style: normal;
+          }
+
+        }
+      }
+
+    }
+
+  }
+
+}

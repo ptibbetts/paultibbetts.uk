@@ -1,0 +1,9 @@
+<article <?php post_class(); ?>>
+  <header>
+    <h2 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <?php if (get_post_type() === 'post') { get_template_part('templates/entry-meta'); } ?>
+  </header>
+  <div class="">
+    <?php the_excerpt(); ?>
+  </div>
+</article>

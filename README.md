@@ -1,6 +1,7 @@
 # [paultibbetts.uk](https://paultibbetts.uk)
 
-Personal website. Built on WordPress using [Sage](https://github.com/roots/sage), [Bedrock](https://github.com/roots/bedrock) and [Trellis](https://github.com/roots/bedrock-ansible).
+Personal website. Built on WordPress using [Sage](https://github.com/roots/sage), [Bedrock](https://github.com/roots/bedrock) and [Trellis](https://github.com/roots/bedrock-ansible) by
+the [Roots](https://roots.io) team.
 
 ### Installation
 
@@ -14,10 +15,10 @@ Clone this repository next to a copy of [Trellis](https://github.com/roots/bedro
 
 #### Sage/Theme
 - Install Sage's [requirements](https://github.com/roots/sage#requirements)
-- Configure Sage and customize the theme as usual. At a minimum:
+- Configure Allusion and customize the theme as usual. At a minimum:
 
 ```
-cd web/app/themes/sage
+cd web/app/themes/allusion
 npm install
 bower install
 gulp

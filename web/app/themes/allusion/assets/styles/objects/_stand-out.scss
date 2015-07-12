@@ -1,0 +1,16 @@
+.stand-out {
+  color: palette(teal);
+  font-size: 2em;
+  position: relative;
+
+  &:before {
+    //content: "“";
+    position: absolute; // to not indent the text
+    left: -0.35em;
+  }
+
+  &:after {
+    //content: "”";
+  }
+
+}
