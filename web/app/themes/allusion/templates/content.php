@@ -1,9 +1,9 @@
-<article <?php post_class(); ?>>
+<article <?php post_class('h-entry','hentry'); ?>>
   <header>
-    <h2 class=""><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+    <h2 class="p-name"><a href="<?= the_permalink(); ?>" class="u-url url" itemprop="url" title="Permalink to <?php the_title(); ?>"><?= the_title(); ?></a></h2>
     <?php get_template_part('templates/entry-meta'); ?>
   </header>
-  <div class="">
-    <?php the_excerpt(); ?>
+  <div class="p-summary">
+    <?= the_excerpt(); ?>
   </div>
 </article>
