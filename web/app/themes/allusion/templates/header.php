@@ -1,6 +1,11 @@
 <header class="" role="banner">
-  <div class="">
-    <a class="" href="<?= esc_url(home_url('/')); ?>"><?= bloginfo('name'); ?></a>
+    <div class="h-card">
+      <img class="u-photo" src="<?php get_blavatar(114); ?>" alt="Gravatar" />
+      <a class="p-name u-url" href="<?= esc_url(home_url('/'));?>"><?= bloginfo('name'); ?></a>
+      <a class="u-email" href="mailto:email@paultibbetts.uk">email@paultibbetts.uk</a>
+      <span class="p-locality">Birmingham</span>
+      <span class="p-country-name">United Kingdom</span>
+    </div>
     <nav role="navigation">
       <?php
       if (has_nav_menu('primary_navigation')) :
@@ -8,5 +13,4 @@
       endif;
       ?>
     </nav>
-  </div>
 </header>
