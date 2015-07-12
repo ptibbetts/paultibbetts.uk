@@ -1,7 +1,7 @@
 <header class="" role="banner">
   <div class="h-card">
     <img class="u-photo" src="<?php get_blavatar(114); ?>" alt="Gravatar" />
-    <a class="p-name u-url" href="<?= esc_url(home_url('/'));?>"><?= bloginfo('name'); ?></a>
+    <a class="p-name u-url u-uid" href="<?= esc_url(home_url('/'));?>"><?= bloginfo('name'); ?></a>
     <span class="p-note">
       <span class="p-job-title">Front End Developer</span> at <a class="p-org h-card" href="http://thebluecube.com/">The Blue Cube</a>
     </span>
