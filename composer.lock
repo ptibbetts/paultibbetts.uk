@@ -129,20 +129,20 @@
         },
         {
             "name": "johnpbloch/wordpress-core-installer",
-            "version": "0.2.0",
+            "version": "0.2.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/johnpbloch/wordpress-core-installer.git",
-                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e"
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a4c08e91be99e858c7778c2f52a4d73820147c2e",
-                "reference": "a4c08e91be99e858c7778c2f52a4d73820147c2e",
+                "url": "https://api.github.com/repos/johnpbloch/wordpress-core-installer/zipball/a04c2c383ef13aae077f36799ed2eafdebd618d2",
+                "reference": "a04c2c383ef13aae077f36799ed2eafdebd618d2",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "1.0.0"
+                "composer-plugin-api": "^1.0"
             },
             "conflict": {
                 "composer/installers": "<1.0.6"
@@ -170,7 +170,10 @@
                 }
             ],
             "description": "A custom installer to handle deploying WordPress with composer",
-            "time": "2013-09-09 15:04:54"
+            "keywords": [
+                "wordpress"
+            ],
+            "time": "2015-06-11 15:15:30"
         },
         {
             "name": "ptibbetts/blavatar",
@@ -286,15 +289,15 @@
         },
         {
             "name": "wpackagist-plugin/akismet",
-            "version": "3.1.1",
+            "version": "3.1.3",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/akismet/",
-                "reference": "tags/3.1.1"
+                "reference": "tags/3.1.3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/akismet.3.1.3.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -366,7 +369,7 @@
         },
         {
             "name": "wpackagist-plugin/indieweb-post-kinds",
-            "version": "1.4.1",
+            "version": "2.0.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/indieweb-post-kinds/",
@@ -386,15 +389,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.5.3",
+            "version": "3.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.5.3"
+                "reference": "tags/3.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.5.3.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -486,15 +489,15 @@
         },
         {
             "name": "wpackagist-plugin/twitter-cards-meta",
-            "version": "2.1.2",
+            "version": "2.1.6",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/twitter-cards-meta/",
-                "reference": "tags/2.1.2"
+                "reference": "tags/2.1.6"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/twitter-cards-meta.2.1.2.zip",
+                "url": "https://downloads.wordpress.org/plugin/twitter-cards-meta.2.1.6.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -566,15 +569,15 @@
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
-            "version": "2.1.1",
+            "version": "2.2.1",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
-                "reference": "tags/2.1.1"
+                "reference": "tags/2.2.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-seo.2.2.1.zip",
                 "reference": null,
                 "shasum": null
             },
