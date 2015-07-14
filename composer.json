@@ -73,7 +73,8 @@
     "wpackagist-plugin/webmention": "*",
     "wpackagist-plugin/wordpress-https": "*",
     "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/wordpress-importer": "^0.6.1"
+    "wpackagist-plugin/wordpress-importer": "^0.6.1",
+    "wpackagist-plugin/hashtag": "0.4"
   },
   "extra": {
     "installer-paths": {
