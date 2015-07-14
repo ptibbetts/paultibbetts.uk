@@ -76,4 +76,4 @@ if (!defined('ABSPATH')) {
 /**
  * Default theme
  */
-define('WP_DEFAULT_THEME', 'sage');
+define('WP_DEFAULT_THEME', 'allusion');
