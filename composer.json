@@ -60,20 +60,20 @@
     "roots/soil": "^3.4",
     "ptibbetts/blavatar":"dev-master",
     "wpackagist-plugin/akismet": "*",
-    "wpackagist-plugin/jetpack": "*",
     "wpackagist-plugin/cat-signal": "*",
     "wpackagist-plugin/editorial-calendar": "*",
     "wpackagist-plugin/enable-oembed-discovery": "*",
+    "wpackagist-plugin/hashtag": "*",
     "wpackagist-plugin/indieweb-post-kinds": "*",
+    "wpackagist-plugin/jetpack": "*",
+    "wpackagist-plugin/keyring": "*",
     "wpackagist-plugin/micropub": "*",
     "wpackagist-plugin/relsyndication": "*",
     "wpackagist-plugin/semantic-linkbacks": "*",
     "wpackagist-plugin/social": "*",
     "wpackagist-plugin/twitter-cards-meta": "*",
     "wpackagist-plugin/webmention": "*",
-    "wpackagist-plugin/wordpress-seo": "*",
-    "wpackagist-plugin/wordpress-importer": "^0.6.1",
-    "wpackagist-plugin/hashtag": "0.4"
+    "wpackagist-plugin/wordpress-seo": "*"
   },
   "extra": {
     "installer-paths": {

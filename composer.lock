@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "176d8988790f5438b843ce11bfc0c372",
+    "hash": "c1ed11f2a30b91b2178bfc38ef66e36c",
     "packages": [
         {
             "name": "composer/installers",
@@ -428,6 +428,26 @@
             "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
+            "name": "wpackagist-plugin/keyring",
+            "version": "1.6.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/keyring/",
+                "reference": "tags/1.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/keyring.1.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/keyring/"
+        },
+        {
             "name": "wpackagist-plugin/micropub",
             "version": "0.3",
             "source": {
@@ -546,26 +566,6 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/webmention/"
-        },
-        {
-            "name": "wpackagist-plugin/wordpress-importer",
-            "version": "0.6.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-importer/",
-                "reference": "tags/0.6.1"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/wordpress-importer.0.6.1.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/wordpress-importer/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",
