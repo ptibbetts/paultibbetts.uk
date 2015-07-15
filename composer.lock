@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "da5c13744f343243b279f52d56143e01",
+    "hash": "8f4073073dc04af87098a3f179a93bfa",
     "packages": [
         {
             "name": "composer/installers",
@@ -468,26 +468,6 @@
             "homepage": "https://wordpress.org/plugins/micropub/"
         },
         {
-            "name": "wpackagist-plugin/relsyndication",
-            "version": "0.1",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/relsyndication/",
-                "reference": "trunk"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/relsyndication.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/relsyndication/"
-        },
-        {
             "name": "wpackagist-plugin/semantic-linkbacks",
             "version": "3.1.0",
             "source": {
@@ -508,16 +488,16 @@
             "homepage": "https://wordpress.org/plugins/semantic-linkbacks/"
         },
         {
-            "name": "wpackagist-plugin/social",
-            "version": "3.1.1",
+            "name": "wpackagist-plugin/syndication-links",
+            "version": "2.0.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/social/",
-                "reference": "tags/3.1.1"
+                "url": "http://plugins.svn.wordpress.org/syndication-links/",
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/social.3.1.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -525,7 +505,7 @@
                 "composer/installers": "~1.0"
             },
             "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/social/"
+            "homepage": "https://wordpress.org/plugins/syndication-links/"
         },
         {
             "name": "wpackagist-plugin/twitter-cards-meta",
