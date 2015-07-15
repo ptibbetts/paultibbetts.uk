@@ -13,6 +13,8 @@ Clone this repository next to a copy of [Trellis](https://github.com/roots/trell
 │   └── site (this repo)
 ```
 
+Move the Vagrantfile from Trellis to the root: `mv ansible/Vagrantfile ./Vagrantfile`
+
 #### Allusion/Theme
 - Install Sage's [requirements](https://github.com/roots/sage#requirements)
 
