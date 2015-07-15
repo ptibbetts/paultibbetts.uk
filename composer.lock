@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "c1ed11f2a30b91b2178bfc38ef66e36c",
+    "hash": "da5c13744f343243b279f52d56143e01",
     "packages": [
         {
             "name": "composer/installers",
@@ -566,6 +566,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/webmention/"
+        },
+        {
+            "name": "wpackagist-plugin/wordpress-https",
+            "version": "3.3.6",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wordpress-https/",
+                "reference": "tags/3.3.6"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wordpress-https.3.3.6.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wordpress-https/"
         },
         {
             "name": "wpackagist-plugin/wordpress-seo",

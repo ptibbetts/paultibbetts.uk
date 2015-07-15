@@ -73,6 +73,7 @@
     "wpackagist-plugin/social": "*",
     "wpackagist-plugin/twitter-cards-meta": "*",
     "wpackagist-plugin/webmention": "*",
+    "wpackagist-plugin/wordpress-https": "*",
     "wpackagist-plugin/wordpress-seo": "*"
   },
   "extra": {
