@@ -30,6 +30,26 @@
     {
       "type": "composer",
       "url": "http://wpackagist.org"
+    },
+    {
+      "type":"package",
+        "package": {
+          "name": "ptibbetts/blavatar",
+          "version": "master",
+          "source": {
+            "url": "https://gist.github.com/66259c06bc9485cc4268.git",
+            "type": "git",
+            "reference":"master"
+          },
+          "autoload": {
+            "classmap": ["."]
+          },
+          "require": {
+            "composer/installers": "~1.0"
+          },
+          "type": "wordpress-plugin",
+          "installation-source": "dist"
+        }
     }
   ],
   "require": {
@@ -37,7 +57,12 @@
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "4.4.1",
-    "oscarotero/env": "^1.0"
+    "oscarotero/env": "^1.0",
+    "ptibbetts/blavatar":"dev-master",
+    "roots/soil": "^3.6",
+    "wpackagist-plugin/akismet": "^3.1",
+    "wpackagist-plugin/jetpack": "^3.9",
+    "wpackagist-plugin/wordpress-seo": "^3.0"
   },
   "extra": {
     "installer-paths": {
