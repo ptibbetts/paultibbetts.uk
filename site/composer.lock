@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7d8e95d28cada0b1aebabdefb5751331",
-    "content-hash": "2a0f51682103bae3ac720a6c6df838df",
+    "hash": "0cc440da47aae5d66485e8fa7f49d0f5",
+    "content-hash": "548e3bc283cc94d14e1d81a48d28e36d",
     "packages": [
         {
             "name": "composer/installers",
@@ -523,6 +523,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/semantic-linkbacks/"
+        },
+        {
+            "name": "wpackagist-plugin/syndication-links",
+            "version": "2.0.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/syndication-links/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/syndication-links.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/syndication-links/"
         },
         {
             "name": "wpackagist-plugin/webmention",
