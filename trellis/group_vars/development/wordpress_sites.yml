@@ -1,0 +1,28 @@
+# Documentation: https://roots.io/trellis/docs/local-development-setup/
+wordpress_sites:
+  paultibbetts.uk:
+    site_hosts:
+      - paultibbetts.dev
+    local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
+    site_install: true
+    site_title: Paul Tibbetts
+    admin_user: admin
+    # admin_password: (defined in group_vars/development/vault.yml)
+    admin_email: email@paultibbetts.dev
+    initial_permalink_structure: /%postname%/ # applied only at time of WP install and when `site_install: true`
+    multisite:
+      enabled: false
+      subdomains: false
+    ssl:
+      enabled: true
+    cache:
+      enabled: false
+      duration: 30s
+    env:
+      disable_wp_cron: true
+      wp_home: http://paultibbetts.dev
+      wp_siteurl: http://paultibbetts.dev/wp
+      wp_env: development
+      db_name: pt_dev
+      db_user: pt_dbuser
+      # db_password: (defined in group_vars/development/vault.yml)
