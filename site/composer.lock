@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "7207d1a013140154e308401f7fa6b735",
-    "content-hash": "9f4bd0b1cf89a8c3f6960c057c84d2b8",
+    "hash": "7d8e95d28cada0b1aebabdefb5751331",
+    "content-hash": "2a0f51682103bae3ac720a6c6df838df",
     "packages": [
         {
             "name": "composer/installers",
@@ -365,6 +365,46 @@
             "homepage": "https://wordpress.org/plugins/akismet/"
         },
         {
+            "name": "wpackagist-plugin/bridgy-publish",
+            "version": "1.0.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/bridgy-publish/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/bridgy-publish.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/bridgy-publish/"
+        },
+        {
+            "name": "wpackagist-plugin/indieweb-post-kinds",
+            "version": "2.3.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/indieweb-post-kinds/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/indieweb-post-kinds/"
+        },
+        {
             "name": "wpackagist-plugin/jetpack",
             "version": "3.9.1",
             "source": {
@@ -385,6 +425,126 @@
             "homepage": "https://wordpress.org/plugins/jetpack/"
         },
         {
+            "name": "wpackagist-plugin/keyring",
+            "version": "1.6.2",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/keyring/",
+                "reference": "tags/1.6.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/keyring.1.6.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/keyring/"
+        },
+        {
+            "name": "wpackagist-plugin/keyring-reactions-importer",
+            "version": "1.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/keyring-reactions-importer/",
+                "reference": "tags/1.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/keyring-reactions-importer.1.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/keyring-reactions-importer/"
+        },
+        {
+            "name": "wpackagist-plugin/keyring-social-importers",
+            "version": "1.5",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/keyring-social-importers/",
+                "reference": "tags/1.5"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/keyring-social-importers.1.5.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/keyring-social-importers/"
+        },
+        {
+            "name": "wpackagist-plugin/micropub",
+            "version": "0.3",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/micropub/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/micropub.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/micropub/"
+        },
+        {
+            "name": "wpackagist-plugin/semantic-linkbacks",
+            "version": "3.2.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/semantic-linkbacks/",
+                "reference": "tags/3.2.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/semantic-linkbacks.3.2.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/semantic-linkbacks/"
+        },
+        {
+            "name": "wpackagist-plugin/webmention",
+            "version": "2.5.0",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/webmention/",
+                "reference": "tags/2.5.0"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/webmention.2.5.0.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/webmention/"
+        },
+        {
             "name": "wpackagist-plugin/wordpress-seo",
             "version": "3.0.7",
             "source": {
@@ -403,6 +563,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-theme/sempress",
+            "version": "1.5.2",
+            "source": {
+                "type": "svn",
+                "url": "http://themes.svn.wordpress.org/sempress/",
+                "reference": "1.5.2"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/theme/sempress.1.5.2.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "homepage": "https://wordpress.org/themes/sempress/"
         }
     ],
     "packages-dev": [],
