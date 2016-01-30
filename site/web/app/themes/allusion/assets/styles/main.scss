@@ -17,3 +17,8 @@
 @import "layouts/pages";
 @import "layouts/posts";
 @import "layouts/tinymce";
+
+img {
+  height: auto;
+  max-width: 100%;
+}
