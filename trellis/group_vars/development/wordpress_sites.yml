@@ -20,8 +20,8 @@ wordpress_sites:
       duration: 30s
     env:
       disable_wp_cron: true
-      wp_home: http://paultibbetts.dev
-      wp_siteurl: http://paultibbetts.dev/wp
+      wp_home: https://paultibbetts.dev
+      wp_siteurl: https://paultibbetts.dev/wp
       wp_env: development
       db_name: pt_dev
       db_user: pt_dbuser

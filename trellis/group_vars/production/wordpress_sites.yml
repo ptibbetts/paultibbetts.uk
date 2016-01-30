@@ -19,8 +19,8 @@ wordpress_sites:
       duration: 30s
     env:
       disable_wp_cron: true
-      wp_home: http://paultibbetts.uk
-      wp_siteurl: http://paultibbetts.uk/wp
+      wp_home: https://paultibbetts.uk
+      wp_siteurl: https://paultibbetts.uk/wp
       wp_env: production
       db_name: pt_prod
       db_user: pt_dbuser
