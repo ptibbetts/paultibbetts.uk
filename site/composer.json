@@ -72,7 +72,8 @@
     "wpackagist-plugin/keyring": "^1.6",
     "wpackagist-plugin/keyring-social-importers": "^1.5",
     "wpackagist-plugin/keyring-reactions-importer": "^1.1",
-    "wpackagist-plugin/syndication-links": "^2.0"
+    "wpackagist-plugin/syndication-links": "^2.0",
+    "wpackagist-plugin/hashtag": "^0.5.0"
   },
   "extra": {
     "installer-paths": {
