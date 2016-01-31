@@ -5,13 +5,14 @@
   </div>
 
   <footer>
+
     <?php get_template_part('templates/entry-meta'); ?>
 
     <?php
 
       $instagram_filter = get_metadata('post',$post->ID, 'instagram_filter', true);
 
-      if ( $instagram_filter != null ) {
+      if ( $instagram_filter != null && $instagram_filter !== 'Normal' ) {
           echo '<p>';
           echo 'Filtered with: ' . $instagram_filter;
           echo '</p>';
@@ -24,9 +25,8 @@
           echo 'View on Instagram';
           echo '</a>';
       }
-      
-    ?>
 
+    ?>
 
   </footer>
 
