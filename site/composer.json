@@ -68,7 +68,6 @@
     "wpackagist-plugin/bridgy-publish": "^1.0",
     "wpackagist-plugin/indieweb-post-kinds": "^2.3",
     "wpackagist-plugin/micropub": "^0.3.0",
-    "wpackagist-theme/sempress": "^1.5",
     "wpackagist-plugin/keyring": "^1.6",
     "wpackagist-plugin/keyring-social-importers": "^1.5",
     "wpackagist-plugin/keyring-reactions-importer": "^1.1",

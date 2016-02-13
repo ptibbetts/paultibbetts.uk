@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "db44fc0cc934a48c2356d2619c99aabe",
-    "content-hash": "051946862513ae0c78a902a78c76f429",
+    "hash": "a39144a872a7315232cd134d924b0ce8",
+    "content-hash": "242909143772c3ebeb74a19c243403b8",
     "packages": [
         {
             "name": "composer/installers",
@@ -623,33 +623,14 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
-        },
-        {
-            "name": "wpackagist-theme/sempress",
-            "version": "1.5.2",
-            "source": {
-                "type": "svn",
-                "url": "http://themes.svn.wordpress.org/sempress/",
-                "reference": "1.5.2"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/theme/sempress.1.5.2.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-theme",
-            "homepage": "https://wordpress.org/themes/sempress/"
         }
     ],
     "packages-dev": [],
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ptibbetts/blavatar": 20
+        "ptibbetts/blavatar": 20,
+        "ptibbetts/allusion": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
