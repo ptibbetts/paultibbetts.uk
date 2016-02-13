@@ -233,6 +233,25 @@
             "time": "2015-12-31 12:34:29"
         },
         {
+            "name": "ptibbetts/allusion",
+            "version": "master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/ptibbetts/allusion.git",
+                "reference": "master"
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-theme",
+            "autoload": {
+                "classmap": [
+                    "."
+                ]
+            },
+            "time": "2016-02-13 17:55:13"
+        },
+        {
             "name": "ptibbetts/blavatar",
             "version": "master",
             "source": {
