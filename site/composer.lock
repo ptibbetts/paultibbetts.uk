@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "a5c31c5d33a43c2b8807d87fb01cf27f",
-    "content-hash": "e6398a25864b55259e3c1c33d5d75bca",
+    "hash": "3614abb0b918a8ba551006cb9e9b05ae",
+    "content-hash": "37ecddc97959726ed275d291a9df2705",
     "packages": [
         {
             "name": "composer/installers",
@@ -272,16 +272,16 @@
         },
         {
             "name": "roots/soil",
-            "version": "3.6.2",
+            "version": "3.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/roots/soil.git",
-                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58"
+                "reference": "085fd3c9b16df5b72dce4fba09de0207937ef721"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/roots/soil/zipball/8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
-                "reference": "8b534d4b271033d22b8fa0d055c740f7f9c4ca58",
+                "url": "https://api.github.com/repos/roots/soil/zipball/085fd3c9b16df5b72dce4fba09de0207937ef721",
+                "reference": "085fd3c9b16df5b72dce4fba09de0207937ef721",
                 "shasum": ""
             },
             "require": {
@@ -310,7 +310,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2015-12-24 19:42:34"
+            "time": "2016-03-07 19:49:21"
         },
         {
             "name": "vlucas/phpdotenv",
@@ -424,26 +424,6 @@
             "homepage": "https://wordpress.org/plugins/dsgnwrks-instagram-importer/"
         },
         {
-            "name": "wpackagist-plugin/hashtag",
-            "version": "0.5",
-            "source": {
-                "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/hashtag/",
-                "reference": "tags/0.5"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/hashtag.0.5.zip",
-                "reference": null,
-                "shasum": null
-            },
-            "require": {
-                "composer/installers": "~1.0"
-            },
-            "type": "wordpress-plugin",
-            "homepage": "https://wordpress.org/plugins/hashtag/"
-        },
-        {
             "name": "wpackagist-plugin/indieweb-post-kinds",
             "version": "2.3.1",
             "source": {
@@ -465,15 +445,15 @@
         },
         {
             "name": "wpackagist-plugin/jetpack",
-            "version": "3.9.1",
+            "version": "3.9.2",
             "source": {
                 "type": "svn",
                 "url": "http://plugins.svn.wordpress.org/jetpack/",
-                "reference": "tags/3.9.1"
+                "reference": "tags/3.9.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/jetpack.3.9.1.zip",
+                "url": "https://downloads.wordpress.org/plugin/jetpack.3.9.2.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -648,8 +628,8 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "ptibbetts/blavatar": 20,
-        "ptibbetts/allusion": 20
+        "ptibbetts/allusion": 20,
+        "ptibbetts/blavatar": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
