@@ -73,7 +73,8 @@
     "wpackagist-plugin/keyring-reactions-importer": "^1.1",
     "wpackagist-plugin/syndication-links": "^2.0",
     "wpackagist-plugin/dsgnwrks-instagram-importer": "^1.3",
-    "roots/wp-password-bcrypt": "1.0.0"
+    "roots/wp-password-bcrypt": "1.0.0",
+    "wpackagist-plugin/wp-github-sync": "^1.6"
   },
   "extra": {
     "installer-paths": {

@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "46aa350ef90f6f7a0769858e3fc5ba38",
-    "content-hash": "1f28fa24e3a540f2a1f934ee23b84d1e",
+    "hash": "047dc5ba430bf74af86f6caec312b691",
+    "content-hash": "fa144ccc04a67477e90b55c98ec2d369",
     "packages": [
         {
             "name": "composer/installers",
@@ -677,6 +677,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/wordpress-seo/"
+        },
+        {
+            "name": "wpackagist-plugin/wp-github-sync",
+            "version": "1.6.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/wp-github-sync/",
+                "reference": "tags/1.6.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/wp-github-sync.1.6.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/wp-github-sync/"
         }
     ],
     "packages-dev": [],
