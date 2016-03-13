@@ -50,26 +50,6 @@
           "type": "wordpress-plugin",
           "installation-source": "dist"
         }
-    },
-    {
-      "type":"package",
-        "package": {
-          "name": "ptibbetts/allusion",
-          "version": "master",
-          "source": {
-            "url": "https://github.com/ptibbetts/allusion.git",
-            "type": "git",
-            "reference":"master"
-          },
-          "autoload": {
-            "classmap": ["."]
-          },
-          "require": {
-            "composer/installers": "~1.0"
-          },
-          "type": "wordpress-theme",
-          "installation-source": "dist"
-        }
     }
   ],
   "require": {
@@ -78,7 +58,7 @@
     "vlucas/phpdotenv": "^2.0.1",
     "johnpbloch/wordpress": "^4.4.1",
     "oscarotero/env": "^1.0",
-    "ptibbetts/allusion":"dev-master",
+    "ptibbetts/allusion": "^1.0",
     "ptibbetts/blavatar":"dev-master",
     "roots/soil": "^3.6",
     "wpackagist-plugin/akismet": "^3.1",
