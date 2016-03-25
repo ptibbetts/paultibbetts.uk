@@ -1,5 +1,5 @@
 # Documentation: https://roots.io/trellis/docs/ssh-keys/
-admin_user: admin
+admin_user: "{{ vault_admin_user }}"
 
 # Also define sudoer_passwords in group_vars/<environment>/main.yml
 users:

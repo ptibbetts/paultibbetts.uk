@@ -12,8 +12,7 @@ wordpress_sites:
       subdomains: false
     ssl:
       enabled: true
-      cert: /Users/paul/.ssl/paultibbetts.uk/paultibbetts.uk.crt
-      key: /Users/paul/.ssl/paultibbetts.uk/paultibbetts.uk.key
+      provider: letsencrypt
     cache:
       enabled: false
       duration: 30s
