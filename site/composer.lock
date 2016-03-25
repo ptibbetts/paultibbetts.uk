@@ -234,16 +234,16 @@
         },
         {
             "name": "ptibbetts/allusion",
-            "version": "v1.0.4",
+            "version": "v1.1.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ptibbetts/allusion.git",
-                "reference": "f3a4e846e7f9cbfebe18330e9e699647d217ef60"
+                "reference": "2cff44e109d931ddd8b9a15f0962e3cb5f6f7c55"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ptibbetts/allusion/zipball/f3a4e846e7f9cbfebe18330e9e699647d217ef60",
-                "reference": "f3a4e846e7f9cbfebe18330e9e699647d217ef60",
+                "url": "https://api.github.com/repos/ptibbetts/allusion/zipball/2cff44e109d931ddd8b9a15f0962e3cb5f6f7c55",
+                "reference": "2cff44e109d931ddd8b9a15f0962e3cb5f6f7c55",
                 "shasum": ""
             },
             "require": {
@@ -267,7 +267,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-03-16 01:00:04"
+            "time": "2016-03-25 20:14:59"
         },
         {
             "name": "ptibbetts/blavatar",
@@ -443,7 +443,7 @@
             "version": "3.1.8",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/akismet/",
+                "url": "https://plugins.svn.wordpress.org/akismet/",
                 "reference": "tags/3.1.8"
             },
             "dist": {
@@ -463,7 +463,7 @@
             "version": "1.3.7",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/dsgnwrks-instagram-importer/",
+                "url": "https://plugins.svn.wordpress.org/dsgnwrks-instagram-importer/",
                 "reference": "trunk"
             },
             "dist": {
@@ -503,7 +503,7 @@
             "version": "3.9.4",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/jetpack/",
+                "url": "https://plugins.svn.wordpress.org/jetpack/",
                 "reference": "tags/3.9.4"
             },
             "dist": {
@@ -523,7 +523,7 @@
             "version": "1.6.2",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/keyring/",
+                "url": "https://plugins.svn.wordpress.org/keyring/",
                 "reference": "tags/1.6.2"
             },
             "dist": {
@@ -543,7 +543,7 @@
             "version": "1.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/keyring-reactions-importer/",
+                "url": "https://plugins.svn.wordpress.org/keyring-reactions-importer/",
                 "reference": "tags/1.1"
             },
             "dist": {
@@ -563,7 +563,7 @@
             "version": "1.5",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/keyring-social-importers/",
+                "url": "https://plugins.svn.wordpress.org/keyring-social-importers/",
                 "reference": "tags/1.5"
             },
             "dist": {
@@ -583,7 +583,7 @@
             "version": "0.3",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/micropub/",
+                "url": "https://plugins.svn.wordpress.org/micropub/",
                 "reference": "trunk"
             },
             "dist": {
@@ -603,7 +603,7 @@
             "version": "3.2.0",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/semantic-linkbacks/",
+                "url": "https://plugins.svn.wordpress.org/semantic-linkbacks/",
                 "reference": "tags/3.2.0"
             },
             "dist": {
@@ -623,7 +623,7 @@
             "version": "2.0.3",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/syndication-links/",
+                "url": "https://plugins.svn.wordpress.org/syndication-links/",
                 "reference": "trunk"
             },
             "dist": {
@@ -643,7 +643,7 @@
             "version": "2.5.0",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/webmention/",
+                "url": "https://plugins.svn.wordpress.org/webmention/",
                 "reference": "tags/2.5.0"
             },
             "dist": {
@@ -663,7 +663,7 @@
             "version": "3.1.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wordpress-seo/",
+                "url": "https://plugins.svn.wordpress.org/wordpress-seo/",
                 "reference": "tags/3.1.1"
             },
             "dist": {
@@ -683,7 +683,7 @@
             "version": "1.6.1",
             "source": {
                 "type": "svn",
-                "url": "http://plugins.svn.wordpress.org/wp-github-sync/",
+                "url": "https://plugins.svn.wordpress.org/wp-github-sync/",
                 "reference": "tags/1.6.1"
             },
             "dist": {
