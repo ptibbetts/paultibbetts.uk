@@ -1,10 +1,10 @@
 #!/bin/bash
 shopt -s nullglob
 
-DEPLOY_CMD="ansible-playbook deploy.yml -e env=$1 -e site=$2"
+DEPLOY_CMD="ansible-playbook deploy.yml -e env=$1 -e site=paultibbetts.uk"
 ENVIRONMENTS=( hosts/* )
 ENVIRONMENTS=( "${ENVIRONMENTS[@]##*/}" )
-NUM_ARGS=2
+NUM_ARGS=1
 
 show_usage() {
   echo "Usage: deploy <environment> <site name>
