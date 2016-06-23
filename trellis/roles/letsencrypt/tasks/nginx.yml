@@ -1,30 +1,33 @@
-- name: Check for existing certificates
+- name: Check for existing Nginx conf per site
   stat:
-    path: "{{ letsencrypt_certs_dir }}/{{ item.key }}.cert"
-  register: letsencrypt_existing_certs
+    path: "{{ nginx_path }}/sites-enabled/{{ item.key }}.conf"
+  register: nginx_confs
   when: site_uses_letsencrypt
   with_dict: "{{ wordpress_sites }}"
 
-- name: Create Nginx sites for challenges
+- name: Create Nginx conf for challenges location
+  template:
+    src: acme-challenge-location.conf.j2
+    dest: "{{ nginx_path }}/acme-challenge-location.conf"
+  when: sites_need_confs
+
+- name: Create needed Nginx confs for challenges
   template:
     src: nginx-challenge-site.conf.j2
     dest: "{{ nginx_path }}/sites-available/letsencrypt-{{ item.item.key }}.conf"
   when: not item | skipped and not item.stat.exists
-  with_items: "{{ letsencrypt_existing_certs.results }}"
+  with_items: "{{ nginx_confs.results }}"
 
-- name: Enable Nginx site
+- name: Enable Nginx sites
   file:
     src: "{{ nginx_path }}/sites-available/letsencrypt-{{ item.item.key }}.conf"
     dest: "{{ nginx_path }}/sites-enabled/letsencrypt-{{ item.item.key }}.conf"
     state: link
   when: not item | skipped and not item.stat.exists
-  with_items: "{{ letsencrypt_existing_certs.results }}"
+  with_items: "{{ nginx_confs.results }}"
 
-- name: Trigger nginx reload
-  service:
-    name: nginx
-    state: reloaded
-  changed_when: false
+- include: "{{ playbook_dir }}/roles/common/tasks/reload_nginx.yml"
+  when: sites_need_confs
 
 - name: Create test Acme Challenge file
   shell: touch {{ acme_tiny_challenges_directory }}/ping.txt
@@ -33,23 +36,20 @@
     warn: false
 
 - name: Test Acme Challenges
-  command: curl -s -o /dev/null -w "%{http_code}" http://{{ item.1 }}/.well-known/acme-challenge/ping.txt
-  args:
-    warn: false
+  test_challenges:
+    hosts: "{{ item.value.site_hosts | reverse_www(enabled=item.value.www_redirect | default(true)) }}"
   register: letsencrypt_test_challenges
-  when: item.0.ssl is defined and item.0.ssl.enabled | default(false) and item.0.ssl.provider | default('manual')  == 'letsencrypt'
-  changed_when: false
-  with_subelements:
-    - "{{ wordpress_sites }}"
-    - site_hosts
+  ignore_errors: true
+  when: site_uses_letsencrypt
+  with_dict: "{{ wordpress_sites }}"
 
 - name: Notify of challenge failures
   fail:
     msg: >
-      Could not access the challenge file for the domain: {{ item.item.1 }}.
+      Could not access the challenge file for the hosts/domains: {{ item.failed_hosts | join(', ') }}.
       Let's Encrypt requires every domain/host be publicly accessible.
-      Make sure that a valid DNS record exists for {{ item.item.1 }} and that it points to this server's IP.
-      If you don't want this domain in your SSL certificate, then remove it from `site_hosts`.
+      Make sure that a valid DNS record exists for {{ item.failed_hosts | join(', ') }} and that they point to this server's IP.
+      If you don't want these domains in your SSL certificate, then remove them from `site_hosts`.
       See https://roots.io/trellis/docs/ssl for more details.
-  when: not item | skipped and item.stdout | int != 200
-  with_items: letsencrypt_test_challenges.results
+  when: not item | skipped and letsencrypt_test_challenges | failed
+  with_items: "{{ letsencrypt_test_challenges.results }}"
