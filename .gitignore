@@ -1,3 +1,6 @@
+.DS_Store
 .vault_pass
 .vagrant
-.DS_Store
+vendor/roles
+*.py[co]
+*.retry
