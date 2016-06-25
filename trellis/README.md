@@ -31,9 +31,9 @@ Trellis will configure a server with the following and more:
 
 Make sure all dependencies have been installed before moving on:
 
-* [Ansible](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip) >= 2.0.0.2
+* [Ansible](http://docs.ansible.com/ansible/intro_installation.html#latest-releases-via-pip) 2.0.2
 * [Virtualbox](https://www.virtualbox.org/wiki/Downloads) >= 4.3.10
-* [Vagrant](http://www.vagrantup.com/downloads.html) >= 1.5.4
+* [Vagrant](http://www.vagrantup.com/downloads.html) <= 1.8.1
 * [vagrant-bindfs](https://github.com/gael-ian/vagrant-bindfs#installation) >= 0.3.1 (Windows users may skip this)
 * [vagrant-hostmanager](https://github.com/smdahlen/vagrant-hostmanager#installation)
 
@@ -92,7 +92,7 @@ A base Ubuntu 14.04 server is required for setting up remote servers.
 
 ## Contributing
 
-Contributions are welcome from everyone. We have [contributing guidelines](CONTRIBUTING.md) to help you get started.
+Contributions are welcome from everyone. We have [contributing guidelines](https://github.com/roots/guidelines/blob/master/CONTRIBUTING.md) to help you get started.
 
 ## Community
 

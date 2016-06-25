@@ -1,6 +1,7 @@
 sites_using_letsencrypt: "[{% for name, site in wordpress_sites.iteritems() if site.ssl.enabled and site.ssl.provider | default('manual') == 'letsencrypt' %}'{{ name }}',{% endfor %}]"
 letsencrypt_enabled: "{{ sites_using_letsencrypt | count > 0 }}"
 site_uses_letsencrypt: "{{ item.value.ssl is defined and item.value.ssl.enabled | default(false) and item.value.ssl.provider | default('manual') == 'letsencrypt' }}"
+sites_need_confs: "False in [{% for item in nginx_confs.results if 'stat' in item %}{{ item.stat.exists }},{% endfor %}]"
 
 acme_tiny_repo: 'https://github.com/diafygi/acme-tiny.git'
 acme_tiny_commit: '69a457269a6392ac31b629b4e103e8ea7dd282c9'
@@ -27,9 +28,9 @@ letsencrypt_ca: 'https://acme-v01.api.letsencrypt.org'
 
 letsencrypt_account_key: '{{ acme_tiny_data_directory }}/account.key'
 
-letsencrypt_intermediate_cert_path: /etc/ssl/certs/lets-encrypt-x1-cross-signed.pem
-letsencrypt_intermediate_cert_url: 'https://letsencrypt.org/certs/lets-encrypt-x1-cross-signed.pem'
-letsencrypt_intermediate_cert_sha256sum: '6c0a324bb803e9d66b8986ea2085bb9d6bdfe33f5c04a03a3f7024f4aa8e7a2d'
+letsencrypt_intermediate_cert_path: /etc/ssl/certs/lets-encrypt-x3-cross-signed.pem
+letsencrypt_intermediate_cert_url: 'https://letsencrypt.org/certs/lets-encrypt-x3-cross-signed.pem'
+letsencrypt_intermediate_cert_sha256sum: 'e446c5e9dbef9d09ac9f7027c034602492437a05ff6c40011d7235fca639c79a'
 
 letsencrypt_keys_dir: "{{ nginx_ssl_path }}/letsencrypt"
 letsencrypt_certs_dir: "{{ nginx_ssl_path }}/letsencrypt"
