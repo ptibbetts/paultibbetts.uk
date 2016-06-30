@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "4d87be7febe9d7c72ed9a385b581320b",
-    "content-hash": "1e3ffa9efaf2740cbed7b748b9ef0658",
+    "hash": "2f4b82fdb945ccdadb72c11912aa59c6",
+    "content-hash": "6fb952a3aab48880f8ba55bc92224eb6",
     "packages": [
         {
             "name": "composer/installers",
@@ -458,6 +458,26 @@
             },
             "type": "wordpress-plugin",
             "homepage": "https://wordpress.org/plugins/akismet/"
+        },
+        {
+            "name": "wpackagist-plugin/autodescription",
+            "version": "2.6.6.2",
+            "source": {
+                "type": "svn",
+                "url": "https://plugins.svn.wordpress.org/autodescription/",
+                "reference": "trunk"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "https://wordpress.org/plugins/autodescription/"
         },
         {
             "name": "wpackagist-plugin/wp-github-sync",
