@@ -5,7 +5,7 @@
 wordpress_sites:
   paultibbetts.uk:
     site_hosts:
-      - paultibbetts.dev
+      - canonical: paultibbetts.dev
     local_path: ../site # path targeting local Bedrock site directory (relative to Ansible root)
     admin_email: wordpress@paultibbetts.dev
     multisite:
