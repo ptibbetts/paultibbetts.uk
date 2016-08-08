@@ -236,16 +236,16 @@
         },
         {
             "name": "ptibbetts/allusion",
-            "version": "v1.3.2",
+            "version": "v1.3.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ptibbetts/allusion.git",
-                "reference": "49472eb51f84c9ae16e6d95c09bdb832e9734be2"
+                "reference": "b68a4053af5419f12097ff46fceadd2c8046666a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ptibbetts/allusion/zipball/49472eb51f84c9ae16e6d95c09bdb832e9734be2",
-                "reference": "49472eb51f84c9ae16e6d95c09bdb832e9734be2",
+                "url": "https://api.github.com/repos/ptibbetts/allusion/zipball/b68a4053af5419f12097ff46fceadd2c8046666a",
+                "reference": "b68a4053af5419f12097ff46fceadd2c8046666a",
                 "shasum": ""
             },
             "require": {
@@ -269,7 +269,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-08-08 18:48:39"
+            "time": "2016-08-08 18:52:41"
         },
         {
             "name": "ptibbetts/blavatar",
