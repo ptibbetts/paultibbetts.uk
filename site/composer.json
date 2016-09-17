@@ -2,7 +2,7 @@
   "name": "roots/bedrock",
   "type": "project",
   "license": "MIT",
-  "description": "A modern WordPress stack",
+  "description": "WordPress boilerplate with modern development tools, easier configuration, and an improved folder structure",
   "homepage": "https://roots.io/bedrock/",
   "authors": [
     {
@@ -53,10 +53,10 @@
     }
   ],
   "require": {
-    "php": ">=5.5",
+    "php": ">=5.6",
     "composer/installers": "~1.0.12",
     "vlucas/phpdotenv": "^2.0.1",
-    "johnpbloch/wordpress": "^4.4.1",
+    "johnpbloch/wordpress": "^4.0",
     "oscarotero/env": "^1.0",
     "ptibbetts/allusion": "^1.0",
     "ptibbetts/blavatar":"dev-master",
@@ -64,7 +64,10 @@
     "wpackagist-plugin/akismet": "^3.1",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/wp-github-sync": "^1.6",
-    "wpackagist-plugin/autodescription": "2.6.6.2"
+    "wpackagist-plugin/autodescription": "2.6.6"
+  },
+  "require-dev": {
+    "squizlabs/php_codesniffer": "^2.5.1"
   },
   "extra": {
     "installer-paths": {
@@ -73,5 +76,10 @@
       "web/app/themes/{$name}/": ["type:wordpress-theme"]
     },
     "wordpress-install-dir": "web/wp"
+  },
+  "scripts": {
+    "test": [
+      "vendor/bin/phpcs --ignore=web/wp/,vendor/ -n -s ."
+    ]
   }
 }
