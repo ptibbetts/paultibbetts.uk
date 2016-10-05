@@ -64,7 +64,8 @@
     "wpackagist-plugin/akismet": "^3.1",
     "roots/wp-password-bcrypt": "1.0.0",
     "wpackagist-plugin/wp-github-sync": "^1.6",
-    "wpackagist-plugin/autodescription": "2.6.6"
+    "wpackagist-plugin/autodescription": "2.6.6",
+    "wpackagist-plugin/indieweb": "^3.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
