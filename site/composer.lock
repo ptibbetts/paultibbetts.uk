@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "1cf0d4a7c39e7fd34eb527edc0c108d6",
-    "content-hash": "1d143027a5867bff509688f4ee864b5a",
+    "hash": "2f4cce0226084f0e99266e60bd0277e6",
+    "content-hash": "edab540babacdf6ff191cc0e3e08c986",
     "packages": [
         {
             "name": "composer/installers",
@@ -236,16 +236,16 @@
         },
         {
             "name": "ptibbetts/allusion",
-            "version": "v1.4.2",
+            "version": "v1.4.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ptibbetts/allusion.git",
-                "reference": "fe926ac71986451f91f169001748da1ca9e8e57d"
+                "reference": "b1f50e3d6a54c745b76dbc67fb5e936070cc45f5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ptibbetts/allusion/zipball/fe926ac71986451f91f169001748da1ca9e8e57d",
-                "reference": "fe926ac71986451f91f169001748da1ca9e8e57d",
+                "url": "https://api.github.com/repos/ptibbetts/allusion/zipball/b1f50e3d6a54c745b76dbc67fb5e936070cc45f5",
+                "reference": "b1f50e3d6a54c745b76dbc67fb5e936070cc45f5",
                 "shasum": ""
             },
             "require": {
@@ -269,7 +269,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-09-17 23:28:00"
+            "time": "2016-10-12 11:16:39"
         },
         {
             "name": "ptibbetts/blavatar",
@@ -453,7 +453,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/akismet.3.2.zip",
-                "reference": null,
+                "reference": "tags/3.2",
                 "shasum": null
             },
             "require": {
@@ -464,15 +464,15 @@
         },
         {
             "name": "wpackagist-plugin/autodescription",
-            "version": "2.6.6",
+            "version": "2.7.0",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/autodescription/",
-                "reference": "tags/2.6.6"
+                "reference": "trunk"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://downloads.wordpress.org/plugin/autodescription.2.6.6.zip",
+                "url": "https://downloads.wordpress.org/plugin/autodescription.zip",
                 "reference": null,
                 "shasum": null
             },
@@ -493,7 +493,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-github-sync.1.7.1.zip",
-                "reference": null,
+                "reference": "tags/1.7.1",
                 "shasum": null
             },
             "require": {
