@@ -564,7 +564,7 @@
         },
         {
             "name": "wpackagist-plugin/social-networks-auto-poster-facebook-twitter-g",
-            "version": "3.7.6",
+            "version": "3.7.7",
             "source": {
                 "type": "svn",
                 "url": "https://plugins.svn.wordpress.org/social-networks-auto-poster-facebook-twitter-g/",
