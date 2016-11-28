@@ -71,7 +71,8 @@
     "wpackagist-plugin/micropub": "^1.0",
     "wpackagist-plugin/indieweb-post-kinds": "^2.4",
     "wpackagist-plugin/syndication-links": "^3.0",
-    "wpackagist-plugin/social-networks-auto-poster-facebook-twitter-g": "^3.7"
+    "wpackagist-plugin/social-networks-auto-poster-facebook-twitter-g": "^3.7",
+    "wpackagist-plugin/wonderm00ns-simple-facebook-open-graph-tags": "^2.0"
   },
   "require-dev": {
     "squizlabs/php_codesniffer": "^2.5.1"
