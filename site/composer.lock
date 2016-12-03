@@ -236,16 +236,16 @@
         },
         {
             "name": "ptibbetts/allusion",
-            "version": "v1.4.3",
+            "version": "v1.4.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/ptibbetts/allusion.git",
-                "reference": "b1f50e3d6a54c745b76dbc67fb5e936070cc45f5"
+                "reference": "b66166ad8b34fe56feb7ced0ed1a3fdf9f9ff689"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/ptibbetts/allusion/zipball/b1f50e3d6a54c745b76dbc67fb5e936070cc45f5",
-                "reference": "b1f50e3d6a54c745b76dbc67fb5e936070cc45f5",
+                "url": "https://api.github.com/repos/ptibbetts/allusion/zipball/b66166ad8b34fe56feb7ced0ed1a3fdf9f9ff689",
+                "reference": "b66166ad8b34fe56feb7ced0ed1a3fdf9f9ff689",
                 "shasum": ""
             },
             "require": {
@@ -269,7 +269,7 @@
             "keywords": [
                 "wordpress"
             ],
-            "time": "2016-10-12 11:16:39"
+            "time": "2016-12-03 14:04:44"
         },
         {
             "name": "ptibbetts/blavatar",
@@ -453,7 +453,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/akismet.3.2.zip",
-                "reference": "tags/3.2",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -473,7 +473,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/autodescription.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -493,7 +493,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/indieweb.3.0.5.zip",
-                "reference": "tags/3.0.5",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -513,7 +513,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/indieweb-post-kinds.2.4.3.zip",
-                "reference": "tags/2.4.3",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -533,7 +533,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/micropub.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -553,7 +553,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/semantic-linkbacks.3.2.0.zip",
-                "reference": "tags/3.2.0",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -573,7 +573,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/social-networks-auto-poster-facebook-twitter-g.zip",
-                "reference": "trunk",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -593,7 +593,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/syndication-links.3.0.5.zip",
-                "reference": "tags/3.0.5",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -613,7 +613,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/webmention.2.6.1.zip",
-                "reference": "tags/2.6.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -653,7 +653,7 @@
             "dist": {
                 "type": "zip",
                 "url": "https://downloads.wordpress.org/plugin/wp-github-sync.1.7.1.zip",
-                "reference": "tags/1.7.1",
+                "reference": null,
                 "shasum": null
             },
             "require": {
@@ -666,16 +666,16 @@
     "packages-dev": [
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "2.7.0",
+            "version": "2.7.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed"
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
-                "reference": "571e27b6348e5b3a637b2abc82ac0d01e6d7bbed",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/9b324f3a1132459a7274a0ace2e1b766ba80930f",
+                "reference": "9b324f3a1132459a7274a0ace2e1b766ba80930f",
                 "shasum": ""
             },
             "require": {
@@ -740,7 +740,7 @@
                 "phpcs",
                 "standards"
             ],
-            "time": "2016-09-01 23:53:02"
+            "time": "2016-11-30 04:02:31"
         }
     ],
     "aliases": [],
